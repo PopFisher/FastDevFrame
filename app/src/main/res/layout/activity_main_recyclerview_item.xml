@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+    <data class="com.dev.fastdevframe.main.MainRecyclerItemBinding">
+        <variable
+            name="mainItemData"
+            type="com.dev.fastdevframe.main.MainListDataItem" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/main_recycler_item_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@{mainItemData.btnName}"/>
+    </RelativeLayout>
+</layout>
